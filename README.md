@@ -10,11 +10,9 @@ Ouvrez `index.html` dans un navigateur. Pour un environnement de développement 
 
 ## Publier sur GitHub Pages
 
-Le workflow GitHub Actions du projet publie automatiquement le site à chaque push sur `main` ou `master` et tente d’activer GitHub Pages lors du premier déploiement.
+Le workflow **Deploy static content to Pages** publie automatiquement le site à chaque push sur `main`.
 
-1. Créez un dépôt GitHub et poussez-y les fichiers du projet, en conservant le dossier `.github/workflows/`.
-2. Si l’activation automatique échoue, ouvrez **Settings > Pages** et sélectionnez **GitHub Actions** comme source de déploiement.
-3. Après la fin du workflow **Deploy static site to GitHub Pages**, ouvrez l’URL affichée dans le résumé du déploiement.
+Dans le dépôt GitHub, **Settings > Pages** doit utiliser **GitHub Actions** comme source. L’adresse du site est [https://mercato237.github.io/dualshop/](https://mercato237.github.io/dualshop/).
 
 Le site étant un prototype frontend, les comptes et les commandes restent simulés et les données sont stockées dans le navigateur.
 
