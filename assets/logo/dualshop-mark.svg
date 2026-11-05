@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="bag" x1="13" y1="8" x2="49" y2="55" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D66BFF"/>
+      <stop offset="1" stop-color="#761BEB"/>
+    </linearGradient>
+    <linearGradient id="orbit" x1="3" y1="39" x2="60" y2="37" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A020F0"/>
+      <stop offset=".55" stop-color="#F5D7FF"/>
+      <stop offset="1" stop-color="#8C2BFF"/>
+    </linearGradient>
+  </defs>
+  <path d="M21 22v-6a11 11 0 0 1 22 0v7" stroke="#D66BFF" stroke-linecap="round" stroke-width="5"/>
+  <path d="M13 21h38l4 31H9l4-31Z" fill="url(#bag)"/>
+  <path d="M25 29h7a10 10 0 0 1 0 20h-7V29Zm6 5v10a5 5 0 0 0 0-10Z" fill="#fff"/>
+  <path d="M5 42c8 7 20 9 32 6 8-2 15-7 22-15-1 10-8 19-18 23-13 6-29 3-37-4-3-3-2-7 1-10Z" fill="#151020" stroke="url(#orbit)" stroke-linejoin="round" stroke-width="2.5"/>
+</svg>

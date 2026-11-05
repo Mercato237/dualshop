@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consultez votre panier DualShop.">
+  <title>Mon panier — DualShop</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/dualshop-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="data/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/favorites.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-navigation" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="favoris.html">Favoris <span class="favorite-count">0</span></a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html" aria-current="page">Panier <span class="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="section">
+    <p class="eyebrow">Votre sélection</p>
+    <h1>Mon panier</h1>
+    <div id="cart-items" class="cart-items"></div>
+    <div id="cart-summary" class="cart-summary"></div>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <p>© <span data-year></span> DualShop. Tous droits réservés.</p>
+    <nav aria-label="Navigation de pied de page"><a href="produits.html">La boutique</a><a href="favoris.html">Favoris</a><a href="connexion.html">Mon compte</a><a href="panier.html">Mon panier</a></nav>
+  </footer>
+</body>
+</html>

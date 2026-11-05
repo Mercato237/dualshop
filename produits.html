@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Parcourez tous les produits DualShop.">
+  <title>Nos produits — DualShop</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/dualshop-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="data/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <script src="js/favorites.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-navigation" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html" aria-current="page">Produits</a>
+      <a href="favoris.html">Favoris <span class="favorite-count">0</span></a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html">Panier <span class="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="section">
+    <div class="section-heading">
+      <div><p class="eyebrow">La boutique</p><h1>Nos produits</h1><p class="section-subtitle">Une sélection d’essentiels pour ajouter une touche de mieux à chaque journée.</p></div>
+      <label class="search-field">Rechercher
+        <input id="product-search" type="search" placeholder="Nom du produit…" aria-label="Rechercher un produit">
+      </label>
+    </div>
+    <div class="catalog-toolbar">
+      <p id="product-count" class="muted" aria-live="polite"></p>
+      <label class="catalog-select">Catégorie
+        <select id="product-category">
+          <option value="all">Toutes les catégories</option>
+          <option value="Électronique">Électronique</option>
+          <option value="Accessoires">Accessoires</option>
+          <option value="Maison">Maison</option>
+        </select>
+      </label>
+      <label class="catalog-select">Trier par
+        <select id="product-sort">
+          <option value="featured">Sélection</option>
+          <option value="price-asc">Prix croissant</option>
+          <option value="price-desc">Prix décroissant</option>
+          <option value="name">Nom</option>
+        </select>
+      </label>
+    </div>
+    <p id="search-message" class="muted" aria-live="polite"></p>
+    <div class="product-grid" id="products-grid"></div>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <p>© <span data-year></span> DualShop. Tous droits réservés.</p>
+    <nav aria-label="Navigation de pied de page"><a href="produits.html">La boutique</a><a href="favoris.html">Favoris</a><a href="connexion.html">Mon compte</a><a href="panier.html">Mon panier</a></nav>
+  </footer>
+</body>
+</html>

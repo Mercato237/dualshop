@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DualShop, votre boutique en ligne.">
+  <title>DualShop — Accueil</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/dualshop-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="data/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/favorites.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-navigation" aria-label="Navigation principale">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="favoris.html">Favoris <span class="favorite-count">0</span></a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html">Panier <span class="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Achetez. Vivez mieux.</p>
+        <h1>Vos envies,<br><span>en mieux.</span></h1>
+        <p>Des essentiels bien choisis pour le quotidien. Parcourez la sélection DualShop et trouvez votre prochain coup de cœur.</p>
+        <div class="hero-actions">
+          <a class="button" href="produits.html">Explorer la boutique <span aria-hidden="true">→</span></a>
+          <span class="hero-note">Une sélection pensée pour vous</span>
+        </div>
+        <div class="hero-highlights" aria-label="Les engagements DualShop">
+          <div><strong>6</strong><span>produits à découvrir</span></div>
+          <div><strong>100%</strong><span>sélection du moment</span></div>
+        </div>
+      </div>
+      <a class="hero-showcase" href="produit.html?id=casque-audio" aria-label="Découvrir le casque audio, notre coup de cœur à 79,90 euros">
+        <span class="showcase-orbit showcase-orbit-one" aria-hidden="true"></span>
+        <span class="showcase-orbit showcase-orbit-two" aria-hidden="true"></span>
+        <span class="showcase-sparkle sparkle-one" aria-hidden="true">✦</span>
+        <span class="showcase-sparkle sparkle-two" aria-hidden="true">✳</span>
+        <span class="showcase-badge">Le coup de cœur</span>
+        <span class="showcase-product" aria-hidden="true">🎧</span>
+        <span class="showcase-caption">
+          <span><small>À écouter partout</small><strong>Casque audio</strong></span>
+          <strong class="showcase-price">79,90 € <span aria-hidden="true">↗</span></strong>
+        </span>
+      </a>
+    </section>
+    <section class="benefits" aria-label="Les avantages DualShop">
+      <div><span aria-hidden="true">✦</span><p><strong>Une sélection soignée</strong><br><span>Des essentiels choisis avec goût</span></p></div>
+      <div><span aria-hidden="true">♡</span><p><strong>Simple et pratique</strong><br><span>Trouvez facilement votre bonheur</span></p></div>
+      <div><span aria-hidden="true">↗</span><p><strong>À vous de découvrir</strong><br><span>Parcourez toutes nos nouveautés</span></p></div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">Choisis pour vous</p><h2>Les incontournables</h2><p class="section-subtitle">De belles trouvailles pour rendre le quotidien plus agréable.</p></div>
+        <a class="text-link" href="produits.html">Voir toute la collection <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="product-grid" id="products-grid" data-limit="3"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <p>© <span data-year></span> DualShop. Tous droits réservés.</p>
+    <nav aria-label="Navigation de pied de page"><a href="produits.html">La boutique</a><a href="favoris.html">Favoris</a><a href="connexion.html">Mon compte</a><a href="panier.html">Mon panier</a></nav>
+  </footer>
+</body>
+</html>

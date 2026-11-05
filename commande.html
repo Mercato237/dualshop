@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Finalisez votre commande de démonstration DualShop.">
+  <title>Finaliser la commande — DualShop</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/dualshop-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="data/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/favorites.js" defer></script>
+  <script src="js/checkout.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-navigation" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="favoris.html">Favoris <span class="favorite-count">0</span></a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html" aria-current="page">Panier <span class="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="section checkout-layout">
+    <div>
+      <a class="back-link" href="panier.html">← Retour au panier</a>
+      <ol class="checkout-steps" aria-label="Étapes de commande">
+        <li><a href="panier.html">Panier</a></li>
+        <li aria-current="step">Livraison</li>
+        <li>Confirmation</li>
+      </ol>
+      <p class="eyebrow">Étape 2 sur 3 · Livraison</p>
+      <h1>Finaliser ma commande</h1>
+      <div class="demo-notice"><strong>Mode démonstration</strong><br>Aucun paiement ne sera effectué et ces informations ne sont pas envoyées à un serveur.</div>
+      <form id="checkout-form" class="checkout-card">
+        <h2>Adresse de livraison</h2>
+        <div class="form-grid">
+          <label>Prénom<input name="firstName" autocomplete="given-name" required></label>
+          <label>Nom<input name="lastName" autocomplete="family-name" required></label>
+        </div>
+        <label>Adresse e-mail<input name="email" type="email" autocomplete="email" required></label>
+        <label>Adresse<input name="address" autocomplete="street-address" required></label>
+        <div class="form-grid">
+          <label>Code postal<input name="postalCode" autocomplete="postal-code" inputmode="numeric" required></label>
+          <label>Ville<input name="city" autocomplete="address-level2" required></label>
+        </div>
+        <fieldset class="payment-demo">
+          <legend>Paiement</legend>
+          <label><input type="radio" name="payment" value="demo" checked> Paiement de démonstration (aucun débit)</label>
+          <p class="muted">Aucune donnée bancaire n’est demandée dans cette maquette.</p>
+        </fieldset>
+        <p id="checkout-error" class="form-message" role="alert"></p>
+        <button class="button checkout-button" type="submit">Confirmer la commande démo</button>
+      </form>
+    </div>
+    <aside class="order-summary">
+      <h2>Récapitulatif</h2>
+      <div id="checkout-items"></div>
+      <div id="checkout-total"></div>
+    </aside>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <p>© <span data-year></span> DualShop. Tous droits réservés.</p>
+    <nav aria-label="Navigation de pied de page"><a href="produits.html">La boutique</a><a href="favoris.html">Favoris</a><a href="connexion.html">Mon compte</a><a href="panier.html">Mon panier</a></nav>
+  </footer>
+</body>
+</html>
