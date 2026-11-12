@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none">
+  <defs>
+    <linearGradient id="background" x1="62" y1="30" x2="574" y2="490" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8EC"/>
+      <stop offset="1" stop-color="#F4E6D0"/>
+    </linearGradient>
+    <linearGradient id="shade" x1="211" y1="109" x2="427" y2="249" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE7A6"/>
+      <stop offset="1" stop-color="#F0B857"/>
+    </linearGradient>
+    <linearGradient id="base" x1="249" y1="300" x2="393" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A46ADD"/>
+      <stop offset="1" stop-color="#5E348C"/>
+    </linearGradient>
+    <filter id="glow" x="122" y="36" width="396" height="331" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="31"/>
+    </filter>
+    <filter id="shadow" x="162" y="361" width="316" height="86" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <rect width="640" height="520" rx="34" fill="url(#background)"/>
+  <circle cx="486" cy="102" r="78" fill="#fff" fill-opacity=".65"/>
+  <circle cx="143" cy="411" r="94" fill="#F6D6AA" fill-opacity=".48"/>
+  <ellipse cx="320" cy="202" fill="#FFE5A1" fill-opacity=".55" filter="url(#glow)" rx="120" ry="105"/>
+  <ellipse cx="320" cy="420" fill="#523574" fill-opacity=".16" filter="url(#shadow)" rx="122" ry="17"/>
+  <path d="m223 207 46-91c5-11 16-18 28-18h46c12 0 23 7 28 18l46 91H223Z" fill="url(#shade)" stroke="#fff" stroke-opacity=".82" stroke-width="6"/>
+  <path d="M244 206h152" stroke="#E7AC50" stroke-linecap="round" stroke-width="7"/>
+  <path d="M315 209h10v126h-10z" fill="#76509A"/>
+  <path d="M248 383c0-30 24-54 54-54h36c30 0 54 24 54 54v22H248v-22Z" fill="url(#base)" stroke="#fff" stroke-opacity=".8" stroke-width="5"/>
+  <rect x="232" y="396" width="176" height="20" rx="10" fill="#66418C"/>
+  <path d="M320 130v55m-29-43 22 43m36-43-22 43" stroke="#fff5D6" stroke-linecap="round" stroke-width="5" opacity=".9"/>
+</svg>

@@ -13,7 +13,8 @@
           product: products.find((product) => product.id === id),
           quantity
         }))
-        .filter((line) => line.product && Number.isSafeInteger(line.quantity) && line.quantity > 0);
+        .filter((line) => line.product && Number.isSafeInteger(line.quantity) && line.quantity > 0)
+        .map((line) => ({ ...line, quantity: Math.min(line.quantity, 10) }));
     } catch (error) {
       console.error("Impossible de lire le panier pour la commande.", error);
       return [];
@@ -45,7 +46,7 @@
       if (items) {
         items.innerHTML = lines.map(({ product, quantity }) => `
           <div class="checkout-item">
-            <span>${product.icon} ${product.name} <strong>× ${quantity}</strong></span>
+            <span><img src="${product.image}" alt="" loading="lazy"> ${product.name} <strong>× ${quantity}</strong></span>
             <span>${formatPrice(product.price * quantity)}</span>
           </div>`).join("");
       }

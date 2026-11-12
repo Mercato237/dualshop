@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none">
+  <defs>
+    <linearGradient id="background" x1="70" y1="35" x2="560" y2="495" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F7FF"/>
+      <stop offset="1" stop-color="#E4E8FA"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="207" y1="125" x2="444" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9474DB"/>
+      <stop offset="1" stop-color="#483374"/>
+    </linearGradient>
+    <linearGradient id="pocket" x1="244" y1="276" x2="396" y2="378" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B59BEA"/>
+      <stop offset="1" stop-color="#8062BB"/>
+    </linearGradient>
+    <filter id="shadow" x="122" y="115" width="397" height="368" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+  </defs>
+  <rect width="640" height="520" rx="34" fill="url(#background)"/>
+  <circle cx="492" cy="108" r="77" fill="#fff" fill-opacity=".58"/>
+  <circle cx="146" cy="417" r="96" fill="#C8D2F2" fill-opacity=".5"/>
+  <ellipse cx="320" cy="433" fill="#342654" fill-opacity=".17" filter="url(#shadow)" rx="154" ry="23"/>
+  <path d="M249 188v-35c0-44 27-72 71-72s71 28 71 72v35" stroke="#55417F" stroke-linecap="round" stroke-width="19"/>
+  <path d="M224 174c0-17 13-30 30-30h132c17 0 30 13 30 30l22 212c3 27-18 50-45 50H247c-27 0-48-23-45-50l22-212Z" fill="url(#bag)" stroke="#fff" stroke-opacity=".75" stroke-width="5"/>
+  <path d="m244 278 8 99c1 13 12 23 25 23h86c13 0 24-10 25-23l8-99H244Z" fill="url(#pocket)" stroke="#D8CCF2" stroke-width="4"/>
+  <path d="M280 283v-16c0-22 18-40 40-40s40 18 40 40v16" stroke="#EDE7FA" stroke-linecap="round" stroke-width="8"/>
+  <path d="M268 202h104" stroke="#D9CDF2" stroke-linecap="round" stroke-width="6" opacity=".8"/>
+  <circle cx="320" cy="348" r="7" fill="#F6F1FF"/>
+</svg>

@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener("submit", (event) => {
     event.preventDefault();
     const email = new FormData(form).get("email");
-    localStorage.setItem("dualshop-user", String(email));
-    message.textContent = `Connexion de démonstration réussie pour ${email}.`;
+    message.textContent = `Démonstration : aucun compte n’a été créé pour ${email}.`;
   });
 });

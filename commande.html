@@ -16,6 +16,7 @@
   <script src="js/checkout.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Passer au contenu</a>
   <header class="site-header">
     <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
@@ -29,7 +30,7 @@
       <a href="panier.html" aria-current="page">Panier <span class="cart-count">0</span></a>
     </nav>
   </header>
-  <main class="section checkout-layout">
+  <main class="section checkout-layout" id="main-content">
     <div>
       <a class="back-link" href="panier.html">← Retour au panier</a>
       <ol class="checkout-steps" aria-label="Étapes de commande">
@@ -69,7 +70,7 @@
   </main>
   <footer class="site-footer">
     <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
-    <p>© <span data-year></span> DualShop. Tous droits réservés.</p>
+    <p>© <span data-year></span> DualShop. Tous droits réservés.<br><span class="footer-note">Prototype interactif · aucune vente réelle</span></p>
     <nav aria-label="Navigation de pied de page"><a href="produits.html">La boutique</a><a href="favoris.html">Favoris</a><a href="connexion.html">Mon compte</a><a href="panier.html">Mon panier</a></nav>
   </footer>
 </body>

@@ -15,7 +15,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; overflow-x: hidden; }
+body { margin: 0; min-width: 280px; overflow-x: hidden; }
 a { color: inherit; text-decoration: none; }
 button, input { font: inherit; }
 button, a, input { -webkit-tap-highlight-color: transparent; }
@@ -91,7 +91,8 @@ nav[aria-label="Navigation principale"] a[aria-current="page"]::after { display:
   box-shadow: 0 32px 80px rgb(6 3 12 / 45%), inset 0 0 55px rgb(186 104 255 / 12%);
   animation: showcase-enter .8s .12s ease-out both, showcase-float 6s 1s ease-in-out infinite;
 }
-.showcase-product { z-index: 1; display: grid; width: 205px; height: 205px; place-items: center; border: 1px solid rgb(255 255 255 / 16%); border-radius: 50%; background: linear-gradient(145deg, #2a1c3b, #17111f); box-shadow: 0 22px 50px rgb(8 4 15 / 40%), 0 0 55px rgb(157 52 255 / 18%); font-size: 7rem; }
+.showcase-product { z-index: 1; display: block; width: 270px; height: 220px; overflow: hidden; border: 1px solid rgb(255 255 255 / 30%); border-radius: 24px; background: #f1e7ff; box-shadow: 0 22px 50px rgb(8 4 15 / 30%), 0 0 55px rgb(157 52 255 / 18%); }
+.showcase-product img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .showcase-badge { position: absolute; z-index: 2; top: 57px; right: 40px; padding: 9px 13px; border: 1px solid rgb(255 255 255 / 18%); border-radius: 99px; color: #fff; background: linear-gradient(110deg, #8127e8, #a12cf5); font-size: .76rem; font-weight: 700; }
 .showcase-caption { position: absolute; z-index: 2; right: 27px; bottom: 30px; left: 27px; display: flex; align-items: end; justify-content: space-between; gap: 12px; padding: 16px 18px; border: 1px solid rgb(255 255 255 / 12%); border-radius: 15px; color: #fff; background: rgb(23 16 32 / 88%); box-shadow: 0 8px 30px rgb(8 4 15 / 28%); backdrop-filter: blur(12px); }
 .showcase-caption > span { display: grid; gap: 4px; }
