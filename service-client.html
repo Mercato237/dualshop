@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez l’équipe DualShop et consultez les réponses aux questions fréquentes.">
+  <meta name="theme-color" content="#110d19">
+  <title>Service client — DualShop</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/dualshop-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="data/products.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/favorites.js" defer></script>
+  <script src="js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Passer au contenu</a>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-navigation" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="favoris.html">Favoris <span class="favorite-count">0</span></a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html">Panier <span class="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="section" id="main-content">
+    <p class="eyebrow">On est là pour vous</p>
+    <h1>Service client</h1>
+    <p class="section-subtitle">Une question sur la démonstration DualShop ? Écrivez-nous par e-mail ou consultez les réponses ci-dessous.</p>
+    <div class="info-grid">
+      <section class="info-card">
+        <h2>Nous contacter par e-mail</h2>
+        <p>Pour une question ou une suggestion, écrivez à <a class="contact-address" href="mailto:fronten31@gmail.com">fronten31@gmail.com</a>.</p>
+      </section>
+      <section class="info-card">
+        <h2>Une boutique de démonstration</h2>
+        <p>Les produits, commandes, livraisons et paiements ne sont pas réels. N’envoyez aucune donnée bancaire ou information sensible.</p>
+      </section>
+      <section class="info-card">
+        <h2>Réponse depuis votre messagerie</h2>
+        <p>Le formulaire prépare un e-mail sur votre appareil. Vous pourrez le relire et l’envoyer depuis votre application de messagerie.</p>
+      </section>
+    </div>
+    <section aria-labelledby="contact-form-title">
+      <h2 id="contact-form-title">Écrire à l’équipe</h2>
+      <form class="customer-form" id="contact-form">
+        <div class="form-grid">
+          <label>Votre nom
+            <input name="name" type="text" autocomplete="name" maxlength="80" required>
+          </label>
+          <label>Votre adresse e-mail
+            <input name="email" type="email" autocomplete="email" maxlength="120" required>
+          </label>
+        </div>
+        <label>Sujet
+          <select name="subject" required>
+            <option value="">Choisir un sujet</option>
+            <option value="Question sur le site">Question sur le site</option>
+            <option value="Suggestion d’amélioration">Suggestion d’amélioration</option>
+            <option value="Autre demande">Autre demande</option>
+          </select>
+        </label>
+        <label>Votre message
+          <textarea name="message" rows="6" maxlength="2000" required></textarea>
+        </label>
+        <button class="button" type="submit">Préparer mon e-mail</button>
+        <p class="form-status" id="contact-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="faq-list" aria-labelledby="faq-title">
+      <h2 id="faq-title">Questions fréquentes</h2>
+      <details>
+        <summary>Les produits affichés sont-ils réellement disponibles ?</summary>
+        <p>Non. DualShop est un prototype de portfolio : les fiches et les prix servent uniquement à présenter les fonctionnalités de l’interface.</p>
+      </details>
+      <details>
+        <summary>Puis-je passer une commande ou payer ?</summary>
+        <p>Non. Le panier et le parcours de commande sont simulés. Aucun paiement, achat ou envoi de commande n’est effectué.</p>
+      </details>
+      <details>
+        <summary>Le formulaire envoie-t-il directement mon message ?</summary>
+        <p>Non. Il ouvre un brouillon dans votre messagerie. Votre message ne part que si vous l’envoyez vous-même.</p>
+      </details>
+      <details>
+        <summary>Comment sont utilisées les photos ?</summary>
+        <p>Les photos provenant de Pexels sont des visuels d’illustration et ne représentent pas nécessairement les produits fictifs affichés.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <p>© <span data-year></span> DualShop. Tous droits réservés.<br><span class="footer-note">Prototype interactif · aucune vente réelle</span></p>
+    <nav aria-label="Navigation de pied de page"><a href="produits.html">La boutique</a><a href="favoris.html">Favoris</a><a href="connexion.html">Mon compte</a><a href="panier.html">Mon panier</a></nav>
+  </footer>
+</body>
+</html>

@@ -9,6 +9,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearButton = document.getElementById("clear-search");
   const normalize = (value) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("fr");
 
+  if (category) {
+    const allCategoriesOption = category.querySelector('option[value="all"]');
+    category.replaceChildren(allCategoriesOption || new Option("Toutes les catégories", "all"));
+    [...new Set((window.PRODUCTS || []).map((product) => product.category))].forEach((value) => {
+      const option = document.createElement("option");
+      option.value = value;
+      option.textContent = value;
+      category.append(option);
+    });
+  }
+  const params = new URLSearchParams(window.location.search);
+  input.value = params.get("q") || "";
+  if (category && [...category.options].some((option) => option.value === params.get("categorie"))) {
+    category.value = params.get("categorie");
+  }
+
   function updateProducts() {
     const query = normalize(input.value.trim());
     const cards = [...grid.querySelectorAll(".product-card")];
@@ -30,13 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (message) {
       message.textContent = visibleCount === 0 ? "Aucun produit ne correspond à ces critères." : "";
     }
-    if (clearButton) clearButton.hidden = visibleCount > 0;
+    if (clearButton) {
+      clearButton.hidden = !query && (!category || category.value === "all") && (!sort || sort.value === "featured");
+    }
   }
 
   clearButton?.addEventListener("click", () => {
     input.value = "";
     if (category) category.value = "all";
     if (sort) sort.value = "featured";
+    window.history.replaceState(null, "", window.location.pathname);
     input.focus();
     updateProducts();
   });

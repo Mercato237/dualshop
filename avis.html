@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Partagez votre avis sur la démonstration DualShop.">
+  <meta name="theme-color" content="#110d19">
+  <title>Votre avis — DualShop</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/dualshop-mark.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="data/products.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/cart.js" defer></script>
+  <script src="js/favorites.js" defer></script>
+  <script src="js/reviews.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Passer au contenu</a>
+  <header class="site-header">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-navigation" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="favoris.html">Favoris <span class="favorite-count">0</span></a>
+      <a href="connexion.html">Connexion</a>
+      <a href="panier.html">Panier <span class="cart-count">0</span></a>
+    </nav>
+  </header>
+  <main class="section" id="main-content">
+    <p class="eyebrow">Votre retour compte</p>
+    <h1>Donnez votre avis</h1>
+    <p class="section-subtitle">Dites-nous ce que vous pensez de l’interface et de votre expérience sur DualShop.</p>
+    <p class="feedback-note"><strong>Mode démonstration :</strong> votre avis est enregistré uniquement dans le stockage local de ce navigateur. Il n’est ni envoyé à DualShop ni visible par les autres visiteurs. Pour recueillir et partager les avis de tous, il faudra connecter le site à un service serveur.</p>
+    <form class="feedback-form" id="feedback-form">
+      <label>Votre note
+        <select name="rating" required>
+          <option value="">Choisir une note</option>
+          <option value="5">5 — Excellent</option>
+          <option value="4">4 — Très bien</option>
+          <option value="3">3 — Bien</option>
+          <option value="2">2 — À améliorer</option>
+          <option value="1">1 — Décevant</option>
+        </select>
+      </label>
+      <label>Titre de votre avis
+        <input name="title" type="text" maxlength="80" required>
+      </label>
+      <label>Votre commentaire
+        <textarea name="comment" rows="5" maxlength="1000" required></textarea>
+      </label>
+      <label>Votre prénom ou pseudo (facultatif)
+        <input name="author" type="text" maxlength="40" autocomplete="nickname">
+      </label>
+      <button class="button" type="submit">Enregistrer mon avis sur cet appareil</button>
+      <p class="form-status" id="feedback-status" role="status" aria-live="polite"></p>
+    </form>
+    <section aria-labelledby="feedback-list-title">
+      <h2 id="feedback-list-title">Avis enregistrés sur cet appareil</h2>
+      <div class="feedback-list" id="feedback-list" aria-live="polite"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="logo" href="index.html"><img class="logo-mark" src="assets/logo/dualshop-mark.svg" alt=""><span class="logo-wordmark">Dual<span>Shop</span></span></a>
+    <p>© <span data-year></span> DualShop. Tous droits réservés.<br><span class="footer-note">Prototype interactif · aucune vente réelle</span></p>
+    <nav aria-label="Navigation de pied de page"><a href="produits.html">La boutique</a><a href="favoris.html">Favoris</a><a href="connexion.html">Mon compte</a><a href="panier.html">Mon panier</a></nav>
+  </footer>
+</body>
+</html>

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Découvrez une sélection d’essentiels pour la maison, les accessoires et l’électronique avec DualShop.">
+  <meta name="description" content="Explorez 50 articles de démonstration répartis dans huit univers sur DualShop.">
   <meta name="theme-color" content="#110d19">
   <meta property="og:type" content="website">
   <meta property="og:title" content="DualShop — Vos envies, en mieux">
-  <meta property="og:description" content="Une sélection d’essentiels bien choisis pour le quotidien.">
+  <meta property="og:description" content="Explorez 50 articles de démonstration répartis dans huit univers.">
   <meta property="og:url" content="https://mercato237.github.io/dualshop/">
   <meta property="og:image" content="https://mercato237.github.io/dualshop/assets/products/casque-audio.svg">
   <title>DualShop — Accueil</title>
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="data/products.js" defer></script>
+  <script src="js/site.js" defer></script>
   <script src="js/app.js" defer></script>
   <script src="js/products.js" defer></script>
   <script src="js/cart.js" defer></script>
@@ -47,8 +48,8 @@
           <span class="hero-note">Une sélection pensée pour vous</span>
         </div>
         <div class="hero-highlights" aria-label="Les engagements DualShop">
-          <div><strong>6</strong><span>produits à découvrir</span></div>
-          <div><strong>100%</strong><span>sélection du moment</span></div>
+          <div><strong>50</strong><span>produits à découvrir</span></div>
+          <div><strong>8</strong><span>univers à parcourir</span></div>
         </div>
       </div>
       <a class="hero-showcase" href="produit.html?id=casque-audio" aria-label="Découvrir le casque audio, notre coup de cœur à 79,90 euros">
@@ -57,7 +58,7 @@
         <span class="showcase-sparkle sparkle-one" aria-hidden="true">✦</span>
         <span class="showcase-sparkle sparkle-two" aria-hidden="true">✳</span>
         <span class="showcase-badge">Le coup de cœur</span>
-        <span class="showcase-product"><img src="assets/products/casque-audio.svg" alt="Casque audio violet"></span>
+        <span class="showcase-product"><img src="https://images.pexels.com/photos/5650531/pexels-photo-5650531.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900" alt="Photo illustrative d’un casque audio"></span>
         <span class="showcase-caption">
           <span><small>À écouter partout</small><strong>Casque audio</strong></span>
           <strong class="showcase-price">79,90 € <span aria-hidden="true">↗</span></strong>
@@ -69,12 +70,34 @@
       <div><span aria-hidden="true">♡</span><p><strong>Simple et pratique</strong><br><span>Trouvez facilement votre bonheur</span></p></div>
       <div><span aria-hidden="true">↗</span><p><strong>À vous de découvrir</strong><br><span>Parcourez toutes nos nouveautés</span></p></div>
     </section>
+    <section class="section" aria-labelledby="univers-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Explorez à votre rythme</p><h2 id="univers-title">Des idées pour tous les jours</h2><p class="section-subtitle">Parcourez huit univers et retrouvez facilement ce qui vous inspire.</p></div>
+        <a class="text-link" href="produits.html">Voir les 50 produits <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="info-grid">
+        <a class="info-card category-card" href="produits.html?categorie=%C3%89lectronique"><span aria-hidden="true">⌁</span><h3>Électronique</h3><p>Audio, accessoires connectés et essentiels du quotidien.</p></a>
+        <a class="info-card category-card" href="produits.html?categorie=Maison"><span aria-hidden="true">⌂</span><h3>Maison</h3><p>Des idées déco pour créer un intérieur qui vous ressemble.</p></a>
+        <a class="info-card category-card" href="produits.html?categorie=Cuisine"><span aria-hidden="true">◇</span><h3>Cuisine</h3><p>De petits essentiels pour vos pauses et vos repas.</p></a>
+        <a class="info-card category-card" href="produits.html?categorie=Mode"><span aria-hidden="true">✦</span><h3>Mode</h3><p>Des accessoires décontractés pour compléter votre style.</p></a>
+        <a class="info-card category-card" href="produits.html?categorie=Accessoires"><span aria-hidden="true">◈</span><h3>Accessoires</h3><p>Les détails pratiques à emporter avec vous.</p></a>
+        <a class="info-card category-card" href="produits.html?categorie=Beaut%C3%A9"><span aria-hidden="true">✧</span><h3>Beauté</h3><p>Des idées pour accompagner vos moments de soin.</p></a>
+        <a class="info-card category-card" href="produits.html?categorie=Sport"><span aria-hidden="true">↗</span><h3>Sport</h3><p>De quoi bouger à votre rythme, à la maison ou dehors.</p></a>
+        <a class="info-card category-card" href="produits.html?categorie=Bureau"><span aria-hidden="true">▤</span><h3>Bureau</h3><p>Des inspirations pour organiser votre espace de travail.</p></a>
+      </div>
+    </section>
     <section class="section">
       <div class="section-heading">
         <div><p class="eyebrow">Choisis pour vous</p><h2>Les incontournables</h2><p class="section-subtitle">De belles trouvailles pour rendre le quotidien plus agréable.</p></div>
         <a class="text-link" href="produits.html">Voir toute la collection <span aria-hidden="true">→</span></a>
       </div>
       <div class="product-grid" id="products-grid" data-limit="3"></div>
+    </section>
+    <section class="section" aria-labelledby="customer-title">
+      <div class="review-cta">
+        <div><p class="eyebrow">À votre écoute</p><h2 id="customer-title">Une question ou une idée à partager ?</h2><p>Notre espace service client présente les moyens de nous contacter et répond aux questions les plus fréquentes. Vous pouvez aussi laisser un avis de démonstration.</p></div>
+        <a class="button" href="service-client.html">Contacter DualShop</a>
+      </div>
     </section>
   </main>
   <footer class="site-footer">

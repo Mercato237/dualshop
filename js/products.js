@@ -8,6 +8,7 @@
         <button class="favorite-toggle" type="button" data-favorite="${product.id}" data-favorite-name="${product.name}" aria-label="Ajouter ${product.name} aux favoris" aria-pressed="false">♡</button>
         <a class="product-visual" href="produit.html?id=${encodeURIComponent(product.id)}" aria-label="Découvrir ${product.name}">
           <img src="${product.image}" alt="${product.imageAlt}" loading="lazy" decoding="async">
+          <span class="product-image-label">Photo illustrative · ${product.imageSource}</span>
         </a>
         <div class="product-info">
           <span class="product-category">${product.category}</span>
@@ -59,7 +60,7 @@
       detail.innerHTML = `
         <div class="product-visual product-detail-visual">
           <img src="${product.image}" alt="${product.imageAlt}" fetchpriority="high">
-          <span class="visual-caption">Sélection DualShop</span>
+          <span class="visual-caption">Photo illustrative via <a href="https://www.pexels.com/license/" target="_blank" rel="noreferrer">Pexels</a></span>
         </div>
         <div class="product-detail-copy">
           <p class="eyebrow">DualShop sélection</p>

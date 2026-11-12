@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script src="data/products.js" defer></script>
+  <script src="js/site.js" defer></script>
   <script src="js/app.js" defer></script>
   <script src="js/products.js" defer></script>
   <script src="js/cart.js" defer></script>
@@ -43,9 +44,6 @@
       <label class="catalog-select">Catégorie
         <select id="product-category">
           <option value="all">Toutes les catégories</option>
-          <option value="Électronique">Électronique</option>
-          <option value="Accessoires">Accessoires</option>
-          <option value="Maison">Maison</option>
         </select>
       </label>
       <label class="catalog-select">Trier par
@@ -57,6 +55,7 @@
         </select>
       </label>
     </div>
+    <p class="catalog-demo-note">Les 50 articles et leurs photos sont des éléments de démonstration ; DualShop ne vend ni ne livre ces produits. Photos d’illustration : <a href="https://www.pexels.com/license/" target="_blank" rel="noreferrer">Pexels</a>.</p>
     <p id="search-message" class="muted" aria-live="polite"></p>
     <button id="clear-search" class="text-link clear-search" type="button" hidden>Effacer la recherche et les filtres</button>
     <div class="product-grid" id="products-grid"></div>

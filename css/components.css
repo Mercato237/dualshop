@@ -109,6 +109,43 @@
 .auth-card .button { margin-top: 6px; }
 .form-message { min-height: 1em; margin: 0; color: var(--accent-dark); }
 
+.product-image-label { position: absolute; right: 12px; bottom: 12px; padding: 6px 9px; border: 1px solid rgb(255 255 255 / 75%); border-radius: 999px; color: #393246; background: rgb(255 255 255 / 88%); font-size: .68rem; font-weight: 700; }
+.catalog-demo-note { margin: 14px 0 0; padding: 12px 14px; border-left: 3px solid #b77af2; border-radius: 0 9px 9px 0; color: #5e526a; background: #f7f2ff; font-size: .83rem; line-height: 1.55; }
+.visual-caption a { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 2px; }
+.info-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 30px 0; }
+.info-card { padding: 22px; border: 1px solid var(--border); border-radius: 16px; background: #fff; box-shadow: 0 8px 26px rgb(34 25 73 / 4%); }
+.info-card h2, .info-card h3 { margin: 0 0 8px; font-size: 1.05rem; }
+.info-card p { margin: 0; color: var(--muted); line-height: 1.65; }
+.category-card { transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.category-card > span { display: grid; width: 40px; height: 40px; margin-bottom: 14px; place-items: center; border-radius: 12px; color: var(--accent-dark); background: var(--accent-soft); font-size: 1.35rem; }
+.category-card:hover { border-color: #d3b8f4; box-shadow: var(--shadow-card); transform: translateY(-3px); }
+.category-card h3 { color: #292633; }
+.customer-form, .feedback-form { display: grid; gap: 16px; padding: clamp(22px, 4vw, 34px); border: 1px solid var(--border); border-radius: 18px; background: #fff; box-shadow: 0 12px 36px rgb(34 25 73 / 5%); }
+.customer-form label, .feedback-form label { display: grid; gap: 7px; color: #484655; font-size: .9rem; font-weight: 700; }
+.customer-form input, .customer-form select, .customer-form textarea, .feedback-form input, .feedback-form select, .feedback-form textarea { width: 100%; min-height: 44px; border: 1px solid var(--border); border-radius: 9px; padding: 10px 12px; color: #292633; background: #fff; font: inherit; }
+.customer-form textarea, .feedback-form textarea { min-height: 140px; resize: vertical; }
+.customer-form input:focus, .customer-form select:focus, .customer-form textarea:focus, .feedback-form input:focus, .feedback-form select:focus, .feedback-form textarea:focus { border-color: var(--accent); outline: 3px solid rgb(97 72 216 / 12%); }
+.form-grid .form-field { display: grid; gap: 7px; }
+.customer-form .form-grid { align-items: start; }
+.customer-form button, .feedback-form button { justify-self: start; }
+.form-status { min-height: 1.3em; margin: 0; color: var(--accent-dark); font-size: .9rem; }
+.feedback-note { margin: 20px 0; padding: 15px 17px; border: 1px solid #e6ddbd; border-radius: 12px; color: #665735; background: #fffbee; font-size: .88rem; line-height: 1.6; }
+.feedback-list { display: grid; gap: 14px; margin-top: 24px; }
+.feedback-card { padding: 20px; border: 1px solid var(--border); border-radius: 14px; background: #fff; }
+.feedback-card h3 { margin: 6px 0 8px; font-size: 1.05rem; }
+.feedback-card p { margin-bottom: 0; color: #555264; line-height: 1.65; overflow-wrap: anywhere; }
+.feedback-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; color: var(--muted); font-size: .82rem; }
+.feedback-stars { color: #8a5a00; letter-spacing: .1em; }
+.faq-list { display: grid; gap: 10px; margin: 28px 0; }
+.faq-list details { padding: 17px 19px; border: 1px solid var(--border); border-radius: 12px; background: #fff; }
+.faq-list summary { color: #342d3f; cursor: pointer; font-weight: 750; }
+.faq-list details p { margin: 12px 0 0; color: var(--muted); line-height: 1.65; }
+.contact-address { color: var(--accent-dark); font-weight: 750; overflow-wrap: anywhere; }
+.review-cta { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin: 26px 0 0; padding: 26px; border: 1px solid #e7def4; border-radius: 18px; background: linear-gradient(120deg, #f8f3ff, #fff); }
+.review-cta h2 { margin: 0 0 7px; font-size: 1.3rem; }
+.review-cta p { max-width: 650px; margin: 0; color: var(--muted); line-height: 1.6; }
+.review-cta .button { flex: 0 0 auto; }
+
 @keyframes card-enter { from { opacity: 0; } to { opacity: 1; } }
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
