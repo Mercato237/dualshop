@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const count = document.getElementById("product-count");
   const clearButton = document.getElementById("clear-search");
   const normalize = (value) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLocaleLowerCase("fr");
+  const featuredOrder = new Map([...grid.querySelectorAll(".product-card")].map((card, index) => [card, index]));
 
   if (category) {
     const allCategoriesOption = category.querySelector('option[value="all"]');
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (sort?.value === "price-asc") return Number(first.dataset.price) - Number(second.dataset.price);
       if (sort?.value === "price-desc") return Number(second.dataset.price) - Number(first.dataset.price);
       if (sort?.value === "name") return first.dataset.name.localeCompare(second.dataset.name, "fr");
-      return 0;
+      return featuredOrder.get(first) - featuredOrder.get(second);
     }).forEach((card) => grid.append(card));
 
     let visibleCount = 0;
